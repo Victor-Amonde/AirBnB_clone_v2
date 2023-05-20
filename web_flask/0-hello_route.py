@@ -5,11 +5,11 @@ from flask import Flask
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 
-@app.route('/airbnb-onepage/', strict_slashes=False)
+@app.route('/airbnb-onepage/')
 def hello():
     return 'Hello HBNB!'
 
-@app.route('/', strict_slashes=False)
+@app.route('/')
 def hello_hbnb():
     """print web"""
     return 'Hello HBNB!'
